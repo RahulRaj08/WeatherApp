@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0b2b4b;
+}
+
+.container{
+    padding: 30px 10%;
+}
+
+.search .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2b4b;
+    color: #ffffff;
+    /* border-bottom: #633c3c 2px double; */
+}
+
+
+
+.elements input{
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-inline-end: 20px;
+    padding-inline-start: 10px;
+}
+
+.elements button{
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline;
+}
+
+
+/* ---------------------------content box ------------------------------- */
+
+.weather_app{
+    /* background-image: url('./images/pexels-aleksandar-pasaric-1694000.jpg'); */
+    /* background-position: cover; */
+    background-color: #0b2b4b;
+    color: #ffffff;
+    
+}
+
+
+.box .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.box_content{
+    background-color: #0b2b4b;
+    padding: 25px;
+    height: 280px;
+    width: 280px;
+    border-radius: 15px;
+    border: #ffffff 2px solid;
+}
+
+.temp{
+    margin-block: 10px;
+}
+
+/* --------------------------Sub Content-------------------------------- */
+
+
+
+.sub_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.sub_content p{
+    text-align: center;
+
+}
+
+.sub_content h2{
+    margin-block: 10px;
+}
+
+.cont{
+    border: 2px solid black;
+    padding: 5px;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-block: 15px;
+    background-color: #0b2b4b;
+    border: #ffffff 2px solid;
+}
+
+/* -------------------Responsive Design -------------------------------------- */
+
+
+@media(max-width:1200px){
+
+    .logo h1{
+        font-size:30px;
+    }
+
+    .elements input{
+        width: 250px;
+    }
+
+    .elements button{
+        width: 100px;
+    }
+
+}
+
+@media(max-width:750px){
+
+    .logo h1{
+        font-size:22px;
+    }
+
+    .elements input{
+        width: 150px;
+    }
+
+    .elements button{
+        width: 80px;
+    }
+
+    .sub_content{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media(max-width:500px){
+
+    .logo h1{
+        font-size:22px;
+    }
+
+    .elements input{
+        width: 100px;
+    }
+
+    .elements button{
+        width: 70px;
+    }
+
+    .sub_content{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media(max-width:420px){
+
+    .search{
+        text-align: center;
+        /* display: flex; */
+        /* width: 1000px; */
+        
+        
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 10px;
+        
+    }
+
+    .search .container{
+        display: block;
+        text-align: center;
+    }
+
+    .logo h1{
+        text-align: center;
+        margin-block: 10px;
+        font-size: 30px;
+    }
+
+    .elements input{
+        /* text-align: center; */
+        margin-block: 10px;
+        width: 100%;
+    }
+
+    .elements button{
+        width: 50%;
+    }
+
+    .sub_content{
+        display: flex;
+        justify-content: center;
+    }
+
+}

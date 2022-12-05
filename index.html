@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="search">
+        <div class="container">
+            <div class="logo">
+                <h1>WeatherLy</h1>
+            </div>
+
+            <div class="elements">
+                <input id="cityname" type="text" placeholder="Enter name of City">
+                <div class="btn">
+                    <button type="button" onclick="search()">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="weather_app">
+        <div class="box">
+            <div class="container">
+                <div class="box_content">
+                    <p id="city" class="place">------</p>
+                    <img src="./images/icons8-sun-150.png" alt="">
+                    <div class="temp">
+                        <p id="temperature"><span>------</span><span>&#176c</span></p>
+                    </div>
+                    <div class="desc">
+                        <p id="type">------</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub">
+            <div class="container">
+                <div class="sub_content">
+                    <div class="cont cont_1">
+                        <h2>Humidity</h2>
+                        <p id="hum">-------</p>
+                    </div>
+                    <div class="cont cont_2">
+                        <h2>Wind-Speed</h2>
+                        <p id="speed">------</p>
+                    </div>
+                    <div class=" cont cont_3">
+                        <h2>Sunrise</h2>
+                        <p id="rise">-------</p>
+                    </div>
+                    <div class=" cont cont-4">
+                        <h2>Sunset</h2>
+                        <p id="set">--------</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./weather.js"></script>
+
+</html>
